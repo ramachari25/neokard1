@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.markdown-input {
+  width: 45%;
+  height: 400px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.markdown-preview {
+  width: 45%;
+  height: 400px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  overflow-y: auto;
+}

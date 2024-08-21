@@ -3,7 +3,7 @@ import {marked} from 'marked';
 import cors from 'cors';
 
 const app = express();
-app.use(express.json());;
+app.use(express.json());
 app.use(cors());
 
 app.post('/convert', (req, res) => {

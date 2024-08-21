@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { LightAsync as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import './App.css';
 const MarkDownEditor = () => {
     const [markdown, setMarkdown] = useState('');
@@ -27,7 +25,6 @@ const MarkDownEditor = () => {
         onChange={(e) => setMarkdown(e.target.value)}
         placeholder="Type your Markdown here..."
       />
-      <SyntaxHighlighter language="markdown" style={docco}/>
       <div className="markdown-preview">
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
